@@ -5,111 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTATO</title>
     <style>
-      body{
-         font-family: Arial, Helvetica, sans-serif;
-         margin: 0;
-         padding: 0;
-         color: #333;
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #f4f4f9;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
-       header{
-         color: rgb(0, 0, 0);
-         padding: 20px 0;
-         text-align: center;
-       }
-       header h1{
-         margin: 0;
-       }
-       .navegation{
-         margin-top: 10px;
-       }
-       .navegation a{
-         color: rgb(0, 0, 0);
-         text-decoration: none;
-         margin: 0 15px;
-       }
-       .navegation a:hover{
-         text-decoration: underline;
-       }
-       .container {
-         max-width: 600px;
-         margin: auto;
-         padding: 20px;
-         border-radius: 5px;
-         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-       }
-       h1 {
-         color: black;
-       }
-       label {
-         display: block;
-         margin: 10px 0 5px;
-       }
-       input[type="text"],
-       input[type="email"],
-       textarea {
-         width: 100%;
-         padding: 10px;
-         margin-bottom: 15px;
-         border-radius: 4px;
-       }
-       button {
-         width: 100%;
-         padding: 10px;
-         border: none;
-         border-radius: 4px;
-         background-color: rgba(0, 0, 0, 0.1);
-         color: rgb(24, 24, 24);
-         font-size: 16px;
-         cursor: pointer;
-       }
- 
-       footer {
-         color: rgb(0, 0, 0);
-         padding: 20px 0;
-         text-align: center;
-         width: 100%;
-       }
-       .rodape{
-         max-width: 1200px;
-         margin: auto;
-       }
-       .rodape p{
-         margin: 0;
-         font-size: 14px;
-       }
-     </style>
-    
+      header {
+        padding: 20px;
+        background-color: #2c3e50;
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      header .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      header .logo .news {
+        background-color: #e74c3c;
+        color: #fff;
+        padding: 2px 5px;
+        border-radius: 3px;
+      }
+      header nav {
+        display: flex;
+        gap: 15px;
+      }
+      header nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+        transition: background-color 0.3s, transform 0.3s, border-radius 0.3s;
+      }
+      header nav a:hover {
+        background-color: #34495e;
+        transform: scale(1.05);
+        border-radius: 5px;
+      }
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+      }
+      .menu-toggle div {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: all 0.3s;
+      }
+      .menu-toggle.open div {
+        background-color: #e74c3c;
+      }
+      .menu-toggle.open div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      .menu-toggle.open div:nth-child(2) {
+        opacity: 0;
+      }
+      .menu-toggle.open div:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+      .container {
+        max-width: 800px;
+        width: 90%;
+        height: auto;
+        margin: 50px auto;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container form {
+        width: 70%;
+      }
+      h1 {
+        color: #2c3e50;
+        text-align: center;
+      }
+      label {
+        display: block;
+        margin: 10px 0 5px;
+        width: 100%;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        resize: none;
+      }
+      textarea {
+        height: 200px;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #2980b9;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      button:hover {
+        background-color: #1abc9c;
+        transform: scale(1.05);
+      }
+      footer {
+        color: #333;
+        padding: 20px 0;
+        text-align: center;
+        width: 100%;
+        background-color: #ecf0f1;
+        margin-top: auto;
+      }
+      .rodape {
+        max-width: 1200px;
+        margin: auto;
+      }
+      .rodape p {
+        margin: 0;
+        font-size: 14px;
+      }
+      @media (max-width: 900px) {
+        .container {
+          padding: 20px;
+          height: auto;
+        }
+        header {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        header nav {
+          flex-direction: column;
+          align-items: flex-start;
+          display: none;
+          width: 100%;
+        }
+        header nav.open {
+          display: flex;
+        }
+        header nav a {
+          padding: 10px;
+          border-bottom: 1px solid #34495e;
+          width: 100%;
+        }
+        .menu-toggle {
+          display: flex;
+        }
+        .menu-toggle.open div:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+        .menu-toggle.open div:nth-child(2) {
+          opacity: 0;
+        }
+        .menu-toggle.open div:nth-child(3) {
+          transform: rotate(-45deg) translate(5px, -5px);
+        }
+      }
+    </style>
   </head>
-
   <body>
-
     <header>
-      <h1>News Portal</h1>
-      <div class="navegation">
+      <div class="logo"><span class="news">News</span> Portal</div>
+      <nav>
         <a href="/src/index.html">Home</a>
         <a href="/src/favority.html">Favoritos</a>
         <a href="/src/about.html">Sobre</a>
- adiciona-campo-idade-em-contact
         <a href="/src/contact.html">Contato</a>
+      </nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </header>
+    <div class="container">
+      <h1>Entre em contato</h1>
+      <form action="#" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
 
-      <div class="container">
-        <h1>Entre em contato</h1>
-        <form action="#" method="post">
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
 
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required>
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="message" rows="4" required></textarea>
 
-          <label for="message">Mensagem:</label>
-          <textarea name="message" id="message" rows="4 required"></textarea>
-
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
     <!--Rodapé-->
     <footer>
       <div class="rodape">
@@ -117,5 +218,22 @@
       </div>
     </footer>
     <!--Fim Rodapé-->
+    <script>
+      function toggleMenu() {
+        const nav = document.querySelector("header nav");
+        const menuToggle = document.querySelector(".menu-toggle");
+        nav.classList.toggle("open");
+        menuToggle.classList.toggle("open");
+      }
+
+      document.addEventListener("click", function (event) {
+        const nav = document.querySelector("header nav");
+        const menuToggle = document.querySelector(".menu-toggle");
+        if (!nav.contains(event.target) && !menuToggle.contains(event.target)) {
+          nav.classList.remove("open");
+          menuToggle.classList.remove("open");
+        }
+      });
+    </script>
   </body>
 </html>
