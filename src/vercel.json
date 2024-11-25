@@ -6,5 +6,8 @@
 		{ "source": "/contact", "destination": "/src/contact.html" },
 		{ "source": "/images/news.jpg", "destination": "/src/images/news.jpg" },
 		{ "source": "/service.js", "destination": "/src/service.js" }
-	]
+	],
+	"projectSettings": {
+		"rootDirectory": "src"
+	}
 }
