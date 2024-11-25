@@ -6,8 +6,7 @@
 - Hadriely Harrizon
 
 ### Links Importantes:
-- **Design no Figma**: [News Portal (Community)](https://www.figma.com/design/TwUqWf9BkOa2CNmL8UmMv0/News-Portal-(Community)?node-id=5-331&node-type=frame&t=XfUbsdXfk80Z95qc-0)  
-- **API de Notícias (Current API)**: [CurrentsAPI](https://currentsapi.services/en)
+- **API de Notícias (IBG)**: [IBGE-API](https://servicodados.ibge.gov.br/api/docs/localidades)
 
 ## Descrição do Projeto
 
