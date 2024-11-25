@@ -666,6 +666,7 @@
         randomNews.forEach(news => {
           const carouselItem = document.createElement("div");
           carouselItem.classList.add("carousel-item");
+          carouselItem.onclick = () => openModal(news); // Adiciona evento de clique
 
           const image = news.imagens ? JSON.parse(news.imagens).image_intro.replace(/\\/g, '') : 'images/news.jpg';
           carouselItem.innerHTML = `
