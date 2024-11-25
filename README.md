@@ -27,3 +27,10 @@ O projeto consiste em um blog de notícias que abordará temas diversos e será 
 3. **Sobre**: Informações sobre o blog e seus criadores.
 4. **Página de Detalhes da Notícia**: Visualização detalhada de cada notícia.
 5. **Formulário de Contato**: Página para os usuários enviarem mensagens e sugestões.
+
+
+## Como rodar a aplicação?
+- Optamos por não implementar uma forma nativa para rodar a aplicação em desenvolmento, porem caso deseje visualizar as paginas você pode utilizar extenções como [Lieve Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) ou [Live Preview](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
+- Recomendamos que veja o funcionamento atravez do link do deploy, para esta aplicação utilizamos a vercel você pode ver atravez desse [LINK](https://blog-noticias-unifavip.vercel.app/)
+- OBS: a nevegação entre paginas não funciona localmente pois a aplicação foi construida no ambiente de produção da vercel logo todas as paginas apontam para um caminho diferente do caminho de pastas local.
+ 
