@@ -7,7 +7,8 @@
 
 ### Links Importantes:
 - **API de Notícias (IBG)**: [IBGE-API](https://servicodados.ibge.gov.br/api/docs/localidades)
-
+- **Link da aplicação**: [Blog-News](blog-noticias-unifavip.vercel.app)
+ 
 ## Descrição do Projeto
 
 O projeto consiste em um blog de notícias que abordará temas diversos e será alimentado via API. A aplicação terá como foco a interatividade e será desenvolvida seguindo as convenções de HTML semântico. As principais funcionalidades incluem:
