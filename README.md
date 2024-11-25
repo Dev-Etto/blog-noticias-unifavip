@@ -7,7 +7,7 @@
 
 ### Links Importantes:
 - **API de Notícias (IBG)**: [IBGE-API](https://servicodados.ibge.gov.br/api/docs/localidades)
-- **Link da aplicação**: [Blog-News](blog-noticias-unifavip.vercel.app)
+- **Link da aplicação**: [Blog-News](https://blog-noticias-unifavip.vercel.app/)
  
 ## Descrição do Projeto
 
