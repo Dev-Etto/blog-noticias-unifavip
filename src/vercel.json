@@ -1,11 +1,11 @@
 {
 	"rewrites": [
-		{ "source": "/", "destination": "/src/index.html" },
-		{ "source": "/favority", "destination": "/src/favority.html" },
-		{ "source": "/about", "destination": "/src/about.html" },
-		{ "source": "/contact", "destination": "/src/contact.html" },
-		{ "source": "/images/news.jpg", "destination": "/src/images/news.jpg" },
-		{ "source": "/service.js", "destination": "/src/service.js" }
+		{ "source": "/", "destination": "/index.html" },
+		{ "source": "/favority", "destination": "/favority.html" },
+		{ "source": "/about", "destination": "/about.html" },
+		{ "source": "/contact", "destination": "/contact.html" },
+		{ "source": "/images/news.jpg", "destination": "/images/news.jpg" },
+		{ "source": "/service.js", "destination": "/service.js" }
 	],
 	"projectSettings": {
 		"rootDirectory": "src"
